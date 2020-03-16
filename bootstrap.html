@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+          <a class="navbar-brand" href="#"><img class = "img-fluid" src="img/logo.png"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                  <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#about">About Me</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Activities
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="#">Seaperch Andover</a>
+                          <a class="dropdown-item" href="#">Andover Robotics Club</a>
+                          <a class="dropdown-item" href="#">Sailing Instructor</a>
+                      </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Projects
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <a class="dropdown-item" href="#">Brick Breaker</a>
+                          <a class="dropdown-item" href="#">Donkey Kong</a>
+                          <a class="dropdown-item" href="#">Poker Game</a>
+                          <a class="dropdown-item" href="#">Tic Tac Toe Android App</a>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+      
+      <div class="bd-example">
+          <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+              
+              <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <img src="img/header1.jpg" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-none d-md-block">
+                          <div class="alert alert-danger" role="alert">
+                              <h1>Nalin Sinha</h1>
+                              <h2>AHS Senior and Computer Science Enthusiast</h2>
+                          </div>
+                          
+                      </div>
+                  </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
+          </div>
+      </div>
+      <div id="about" class="jumbotron jumbotron-fluid">
+          <div class="container">
+              <h1 class="display-4">About Me</h1>
+              <p class="lead">I am a Senior at Andover High School who is interested in a career in a STEM-related field. In the various computer science classes I have taken I have learned object-oriented programming in Java as well as website creation and design along with some Android app development. My experience with robotics includes being a part of the FTC (first tech challenge) robotics club at my high school where I am a team leader, as well as starting my own robotics club (Seaperch). Through this journey, from building and coding robots for the FTC club to learning the engineering design process in Seaperch, I realized how robotics and software can change the world. In the FTC, my team has gone to the states competition, the past 4 years and this year we were able to progress to eleventh place. Seaperch is a robotics club I started with some of my peers at Andover High. This club takes part in the Seaperch competition hosted by the US Navy. 
+                  <a href="https://seaperch-andover.netlify.com/">https://seaperch-andover.netlify.com/</a> </p>
+          </div>
+      </div>
+      
+     
+
+      <div class="alert alert-success" role="alert">
+          <div class="mx-auto" style="width: 200px;">
+              <h1>Projects:</h1>
+          </div>
+          
+          <div class="row">
+              <div class="col">
+                  <!-- Donkey Kong Card-->
+                  <div  class="card container bg-warning btn" style="width: 17rem; height: 595px" data-toggle="modal" data-target=".donkey-modal" type="button">
+                      <img style="padding-top: 20px" src="img/DonkeyKong.png" class="card-img-top">
+                      <div class="card-body">
+                          <h2>Donkey Kong</h2>
+                          <p class="card-text">In my AP Java class I recreated a level of the Donkey Kong game. Using object oriented principles I made the s to be interfaceable with the Arcade interface the class was using to make an Arcade of multiple games.</p>
+                      </div>
+                  </div>
+              </div>
+              <!-- Donkey Kong Modal -->
+              <div class="modal fade donkey-modal"  tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalCenterTitle">Donkey Kong Game</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                              </button>
+                          </div>
+                          <div class="modal-body">
+                              ...
+                          </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target=".breakout-modal">Next</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              
+              <!--Breakout Card-->
+              <div class="col">
+                  <div class="card container bg-success btn" style="width: 17rem; height: 595px" data-toggle="modal" data-target=".breakout-modal" type="button">
+                      <img style="padding-top: 20px" src="/img/Breakout.jpg" class="card-img-top">
+                      <div class="card-body">
+                          <h2>Breakout</h2>
+                          <p class="card-text">In my Java class I recreated the game Breakout where I had to use Object Oriented Principles to simulate the physics of ball collisions with different surfaces. </p>
+                      </div>
+                  </div>
+              </div>
+              
+              <!-- Breakout Modal -->
+              <div class="modal fade breakout-modal"  tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalCenterTitle">Breakout Game</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                              </button>
+                          </div>
+                          <div class="modal-body">
+                              ...
+                          </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target=".donkey-modal">Previous</button>
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target=".poker-modal">Next</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              
+              <!-- Poker Card -->
+              <div class="col">
+                  <div class="card container bg-info btn" style="width: 17rem; height: 595px" data-toggle="modal" data-target=".poker-modal" type="button">
+                      <img style="padding-top: 20px" src="img/Poker.png" class="card-img-top">
+                      <div class="card-body">
+                          <h2>Command-Line Poker</h2>
+                          <p class="card-text">In my Java class I recreated the game Poker where I used object oriented design and abstraction to represent the rules and elements of poker.</p>
+                      </div>
+                  </div>
+              </div>
+              
+               <!-- Poker Modal -->
+              <div class="modal fade poker-modal"  tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalCenterTitle">Poker Game</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                              </button>
+                          </div>
+                          <div class="modal-body">
+                              ...
+                          </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target=".breakout-modal">Previous</button>
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target=".tic-modal">Next</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              
+              <!-- Tic Tac Toe Card -->
+              <div class="col">
+                  <div class="card container bg-danger btn" style="width: 17rem; height: 595px" data-toggle="modal" data-target=".poker-modal" type="button">
+                      <img style="padding-top: 20px" src="img/TicTac.jpg" class="card-img-top">
+                      <div class="card-body">
+                          <h2>Tic Tac Toe Android App</h2>
+                          <p class="card-text">In my AP Java Class I experimetned with mobile development by making a Tic Tac Toe game.</p>
+                      </div>
+                  </div>
+              </div>
+              
+              <!-- Tic Tac Toe Modal -->
+              <div class="modal fade tic-modal"  tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalCenterTitle">Tic Tac Toe Game</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                              </button>
+                          </div>
+                          <div class="modal-body">
+                              ...
+                          </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target=".poker-modal">Previous</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      
+      
+      
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
