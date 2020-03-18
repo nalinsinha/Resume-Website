@@ -26,25 +26,26 @@
                   </li>
                   <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Activities
+                          Projects
                       </a>
                       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <a class="dropdown-item" href="#">Seaperch Andover</a>
-                          <a class="dropdown-item" href="#">Andover Robotics Club</a>
-                          <a class="dropdown-item" href="#">Sailing Instructor</a>
+                          <a class="dropdown-item" href="#Projects" data-toggle="modal" data-target=".breakout-modal" type="button">Breakout</a>
+                          <a class="dropdown-item btn" href="#Projects" data-toggle="modal" data-target=".donkey-modal" type="button">Donkey Kong</a>
+                          <a class="dropdown-item" href="#Projects" data-toggle="modal" data-target=".poker-modal" type="button">Poker Game</a>
+                          <a class="dropdown-item" href="#Projects" data-toggle="modal" data-target=".tic-modal" type="button">Tic Tac Toe Android App</a>
                       </div>
                   </li>
                   <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Projects
+                          Activities
                       </a>
                       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <a class="dropdown-item" href="#">Brick Breaker</a>
-                          <a class="dropdown-item" href="#">Donkey Kong</a>
-                          <a class="dropdown-item" href="#">Poker Game</a>
-                          <a class="dropdown-item" href="#">Tic Tac Toe Android App</a>
+                          <a class="dropdown-item" href="#seap">Seaperch Andover</a>
+                          <a class="dropdown-item" href="#arc">Andover Robotics Club</a>
+                          <a class="dropdown-item" href="#sailing">Sailing Instructor</a>
                       </div>
                   </li>
+                  
               </ul>
           </div>
       </nav>
@@ -77,8 +78,9 @@
       <div id="about" class="jumbotron jumbotron-fluid">
           <div class="container">
               <h1 class="display-4">About Me</h1>
-              <p class="lead">I am a Senior at Andover High School who is interested in a career in a STEM-related field. In the various computer science classes I have taken I have learned object-oriented programming in Java as well as website creation and design along with some Android app development. My experience with robotics includes being a part of the FTC (first tech challenge) robotics club at my high school where I am a team leader, as well as starting my own robotics club (Seaperch). Through this journey, from building and coding robots for the FTC club to learning the engineering design process in Seaperch, I realized how robotics and software can change the world. In the FTC, my team has gone to the states competition, the past 4 years and this year we were able to progress to eleventh place. Seaperch is a robotics club I started with some of my peers at Andover High. This club takes part in the Seaperch competition hosted by the US Navy. 
-                  <a href="https://seaperch-andover.netlify.com/">https://seaperch-andover.netlify.com/</a> </p>
+              <p class="lead">I am a Senior at Andover High School who is interested in a career in a computer science. In the various computer science classes I have taken I have learned object-oriented programming in Java as well as website creation and design along with some Android app development. My experience with robotics includes being a part of the FTC (first tech challenge) robotics club at my high school where I am a team leader, as well as starting my own robotics club (Seaperch). Through this journey, from building and coding robots for the FTC club to learning the engineering design process in Seaperch, I realized how robotics and software can change the world. In the FTC, my team has gone to the states competition, the past 4 years and this year we were able to progress to eleventh place. Seaperch is a robotics club I started with some of my peers at Andover High. This club takes part in the Seaperch competition hosted by the US Navy.<br>
+              <a href="linkedin.com">For more information about my education and activities visit my LinkedIn</a><br>
+              For more info on the Andover SeaPerch Cluib visit: <a href="https://seaperch-andover.netlify.com/">https://seaperch-andover.netlify.com/</a> </p>
           </div>
       </div>
       
@@ -86,23 +88,23 @@
 
       <div class="alert alert-success" role="alert">
           <div class="mx-auto" style="width: 200px;">
-              <h1>Projects:</h1>
+              <h1 id="Projects">Projects:</h1>
           </div>
           
           <div class="row">
               <div class="col">
                   <!-- Donkey Kong Card-->
                   <div  class="card container bg-warning btn" style="width: 17rem; height: 595px" data-toggle="modal" data-target=".donkey-modal" type="button">
-                      <img style="padding-top: 20px" src="img/DonkeyKong.png" class="card-img-top">
+                      <img style="padding-top: 10px" src="img/DonkeyKong.png" class="card-img-top">
                       <div class="card-body">
                           <h2>Donkey Kong</h2>
-                          <p class="card-text">In my AP Java class I recreated a level of the Donkey Kong game. Using object oriented principles I made the s to be interfaceable with the Arcade interface the class was using to make an Arcade of multiple games.</p>
+                          <p class="card-text">In my AP Java class I recreated a level of the Donkey Kong game. Using object oriented principles I made the s to be interfaceable with the Arcade interface the class was using to make an Arcade of multiple games. <br><u>Click for more info</u></p>
                       </div>
                   </div>
               </div>
               <!-- Donkey Kong Modal -->
               <div class="modal fade donkey-modal"  tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
                       <div class="modal-content">
                           <div class="modal-header">
                               <h5 class="modal-title" id="exampleModalCenterTitle">Donkey Kong Game</h5>
@@ -111,7 +113,22 @@
                               </button>
                           </div>
                           <div class="modal-body">
-                              ...
+                              <div class="container-fluid">
+                                  <div class="jumbotron" style="padding-bottom: 10px">
+                                      <h1>More Info:</h1>
+                                      <p class="lead">Below is the main class of the application. The class implements the JavaArcade and KeyListener interfaces so it can define its own version of basic functions. The different characters of the game are all children of the "sprite" class in order to reduce the reptition of code for similar features. All the characters have positions on the screen and sizes as well as speeds so having an abstract class "sprite" handled those basic features while more specific classes extended it and specialized.</p>
+                                      <hr class="my-2">
+                                      <div class="mx-auto" style="width:50px;">
+                                          <a href="https://github.com/nalinsinha/DonkeyKong" target="_blank"><img src="img/GitIcon.png" ></a>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col align-self-center">
+                                          <h2>Main class:</h2>
+                                          <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fnalinsinha%2FDonkeyKong%2Fblob%2Fmaster%2Fsrc%2FMonkeyKong.java&style=default&showBorder=on&showLineNumbers=on&showFileMeta=on"></script>
+                                      </div>
+                                  </div>
+                              </div>
                           </div>
                           <div class="modal-footer">
                               <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target=".breakout-modal">Next</button>
@@ -120,20 +137,55 @@
                   </div>
               </div>
               
+              
+              
+              <!-- dkjgu sdidusgiusgiusdgiusgrsdrgiusgvuufufufufufufufufufufgighiusdfgisurgururuiigigsdiusdifugisdgfsdgidugdf_________________________________________________
+              <div class="modal fade donkey-modal"  tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                  <div class="modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalCenterTitle">Donkey Kong Game</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                              </button>
+                          </div>
+                          <div class="modal-body">
+                              <div class="container-fluid">
+                                  <div class="jumbotron">
+                                      <h1>More Info:</h1>
+                                      <p class="lead">Below is the main class of the application. The class implements the JavaArcade and KeyListener interfaces so it can define its own version of basic functions. The different characters of the game are all children of the "sprite" class in order to reduce the reptition of code for similar features. All the characters have positions on the screen and sizes as well as speeds so having an abstract class "sprite" handled those basic features while more specific classes extended it and specialized. </p>
+                                      <hr class="my-2">
+                                  </div>
+                                  <div class="row">
+                                      <div class="col align-self-center">
+                                          <h2>Main class:</h2>
+                                          <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fnalinsinha%2FDonkeyKong%2Fblob%2Fmaster%2Fsrc%2FMonkeyKong.java&style=default&showBorder=on&showLineNumbers=on&showFileMeta=on"></script>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target=".breakout-modal">Next</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              -->
+              
               <!--Breakout Card-->
               <div class="col">
                   <div class="card container bg-success btn" style="width: 17rem; height: 595px" data-toggle="modal" data-target=".breakout-modal" type="button">
-                      <img style="padding-top: 20px" src="/img/Breakout.jpg" class="card-img-top">
+                      <img style="padding-top: 10px" src="/img/Breakout.jpg" class="card-img-top">
                       <div class="card-body">
                           <h2>Breakout</h2>
-                          <p class="card-text">In my Java class I recreated the game Breakout where I had to use Object Oriented Principles to simulate the physics of ball collisions with different surfaces. </p>
+                          <p class="card-text">In my Java class I recreated the game Breakout where I had to use Object Oriented Principles to simulate the physics of ball collisions with different surfaces. <br><u>Click for more info</u></p>
                       </div>
                   </div>
               </div>
               
               <!-- Breakout Modal -->
               <div class="modal fade breakout-modal"  tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
                       <div class="modal-content">
                           <div class="modal-header">
                               <h5 class="modal-title" id="exampleModalCenterTitle">Breakout Game</h5>
@@ -142,7 +194,24 @@
                               </button>
                           </div>
                           <div class="modal-body">
-                              ...
+                              <div class="container-fluid">
+                                  <div class="jumbotron" style="padding-bottom: 10px">
+                                      <h1>More Info:</h1>
+                                      <p class="lead">Below is the main class (board) of the application. The class uses other subclasses that encapsulate the information for smaller parts of the game. For example the brick, ball and paddle classes contain their attributes and have methods defined to allow the board class to use them for the game. By creating separate classes for these elements their attributes can only be changed in certain ways, for example, the height and width of bricks never needs to be changed in game so that variable cannot be changed from the board class because the necessary method does not exist. </p>
+                                      <hr class="my-2">
+                                      <div class="mx-auto" style="width:50px;">
+                                          <a href="https://github.com/nalinsinha/Breakout" target="_blank"><img src="img/GitIcon.png" ></a>
+                                      </div>
+                                      
+                                      
+                                  </div>
+                                  <div class="row">
+                                      <div class="col align-self-center">
+                                          <h2>Board class:</h2>
+                                          <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fnalinsinha%2FBreakout%2Fblob%2Fmaster%2Fsrc%2FBoard.java&style=default&showBorder=on&showLineNumbers=on&showFileMeta=on"></script>
+                                      </div>
+                                  </div>
+                              </div>
                           </div>
                           <div class="modal-footer">
                               <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target=".donkey-modal">Previous</button>
@@ -155,17 +224,17 @@
               <!-- Poker Card -->
               <div class="col">
                   <div class="card container bg-info btn" style="width: 17rem; height: 595px" data-toggle="modal" data-target=".poker-modal" type="button">
-                      <img style="padding-top: 20px" src="img/Poker.png" class="card-img-top">
+                      <img style="padding-top: 10px" src="img/Poker.png" class="card-img-top">
                       <div class="card-body">
                           <h2>Command-Line Poker</h2>
-                          <p class="card-text">In my Java class I recreated the game Poker where I used object oriented design and abstraction to represent the rules and elements of poker.</p>
+                          <p class="card-text">In my Java class I recreated the game Poker where I used object oriented design and abstraction to represent the rules and elements of poker.<br><u>Click for more info</u></p>
                       </div>
                   </div>
               </div>
               
                <!-- Poker Modal -->
               <div class="modal fade poker-modal"  tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
                       <div class="modal-content">
                           <div class="modal-header">
                               <h5 class="modal-title" id="exampleModalCenterTitle">Poker Game</h5>
@@ -174,7 +243,22 @@
                               </button>
                           </div>
                           <div class="modal-body">
-                              ...
+                              <div class="container-fluid">
+                                  <div class="jumbotron" style="padding-bottom: 10px">
+                                      <h1>More Info:</h1>
+                                      <p class="lead">Below is the main algorithm in the rules class for the program. The rules class checks a hand of cards for different combinations and returns a ranking based on poker rules. The way these hands are identified is having certain special characteristics like 4 of the same card or cards in ascending order. Instead of looking for each combination directly and looping through the cards many times I first search the cards for defining characteristics then match those characteristics to specific hands. This minimizes the complexity of the algorithm as the hand has to be iterated over less times.</p>
+                                      <hr class="my-2">
+                                      <div class="mx-auto" style="width:50px;">
+                                          <a href="https://github.com/nalinsinha/Poker" target="_blank"><img src="img/GitIcon.png" ></a>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col align-self-center">
+                                          <h2>Rules class:</h2>
+                                          <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fnalinsinha%2FPoker%2Fblob%2Fmaster%2Fsrc%2FRules.java&style=default&showBorder=on&showLineNumbers=on&showFileMeta=on"></script>
+                                      </div>
+                                  </div>
+                              </div>
                           </div>
                           <div class="modal-footer">
                               <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target=".breakout-modal">Previous</button>
@@ -186,18 +270,18 @@
               
               <!-- Tic Tac Toe Card -->
               <div class="col">
-                  <div class="card container bg-danger btn" style="width: 17rem; height: 595px" data-toggle="modal" data-target=".poker-modal" type="button">
-                      <img style="padding-top: 20px" src="img/TicTac.jpg" class="card-img-top">
+                  <div class="card container bg-danger btn" style="width: 17rem; height: 595px" data-toggle="modal" data-target=".tic-modal" type="button">
+                      <img style="padding-top: 10px" src="img/TicTac.jpg" class="card-img-top">
                       <div class="card-body">
                           <h2>Tic Tac Toe Android App</h2>
-                          <p class="card-text">In my AP Java Class I experimetned with mobile development by making a Tic Tac Toe game.</p>
+                          <p class="card-text">In my AP Java Class I experimented with mobile development by making a Tic Tac Toe game.<br><u>Click for more info</u></p>
                       </div>
                   </div>
               </div>
               
               <!-- Tic Tac Toe Modal -->
               <div class="modal fade tic-modal"  tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                  <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-dialog modal-dialog-scrollable modal-xl" role="document">
                       <div class="modal-content">
                           <div class="modal-header">
                               <h5 class="modal-title" id="exampleModalCenterTitle">Tic Tac Toe Game</h5>
@@ -206,7 +290,22 @@
                               </button>
                           </div>
                           <div class="modal-body">
-                              ...
+                              <div class="container-fluid">
+                                  <div class="jumbotron" style="padding-bottom: 10px">
+                                      <h1>More Info:</h1>
+                                      <p class="lead">The main activity of the app is what provides the logic for the game. Unlike the other java applicatoins I have written in the past android apps have an xml file to define how the app will look while the logic behind the app is in a separate java file. This class, like the donkey kong game, implements a key listener so I can override,define my own version of, the onClick and onCreate functions. The use of abstraction by creating functions to handle smaller tasks also makes the code easier to read and </p>
+                                      <hr class="my-2">
+                                      <div class="mx-auto" style="width:50px;">
+                                          <a href="https://github.com/nalinsinha/TicTacToe" target="_blank"><img src="img/GitIcon.png" ></a>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class="col align-self-center">
+                                          <h2>Main Activity:</h2>
+                                          <script src="https://emgithub.com/embed.js?target=https%3A%2F%2Fgithub.com%2Fnalinsinha%2FTicTacToe%2Fblob%2Fmaster%2FMainActivity.java&style=default&showBorder=on&showLineNumbers=on&showFileMeta=on"></script>
+                                      </div>
+                                  </div>
+                              </div>
                           </div>
                           <div class="modal-footer">
                               <button type="button" class="btn btn-secondary" data-dismiss="modal" data-toggle="modal" data-target=".poker-modal">Previous</button>
@@ -216,6 +315,18 @@
               </div>
           </div>
       </div>
+      <div class="jumbotron">
+          <h1 class="display-4">Activities:</h1>
+          <h3 id="seap">Andover SeaPerch Club:</h3>
+          <p class="lead">I founded the seaperch andover club in my sophomore year of highschool after finding my passion for robotics the year before in the Andover Robotics Club. Since then we have sent teams to the national competition every year. As president of the club I have helped to recruit new members while also teaching them what I have learned from previous years in the competition. As a senior this year I hope to finish off strong nad leave a thriving club behind.</p>
+          
+          <h3 id="arc">Andover Robotics Club:</h3>
+          <p class="lead">I joined the Andover Robotics Club in my freshman year as part of team 4410 lighting, one of 3 competing teams in the club. There I competed in the FTC robotics competition where for the past 4 years we have been able to advance to the state level. As a Senior I am now the co-team leader of team 5273 thunder where I have had my most successful season yet. We placed 11th in states but more importantly many of our younger members stepped up and took on more of a role. </p>
+          
+          <h3 id=sailing>Sailing Instructor:</h3>
+          <p class="lead">I have been sailing since I was 9. I joined up at a local boathouse and took lessons every summer for the next few years. I then became a volunteer CIT, Counselor in Training, where I helped the staff members around the boathouse with classes and in general. Then in my freshman year I was hired as a sailing instructor to teach sailing classes. Sailing is one of my favorite passtimes and whenever im not teaching it I try to get on a boat myself.</p>
+      </div>
+      
       
       
       
